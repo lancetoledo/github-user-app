@@ -103,6 +103,13 @@ body {
     height: 100%;
     /* background: chartreuse; */
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.profile_frame img {
+    width: 80px;
+    height: 80px;
 }
 
 .user {
