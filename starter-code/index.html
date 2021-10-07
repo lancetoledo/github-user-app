@@ -14,13 +14,13 @@
 
       <div class="header">
         <h4>devfinder</h4>
-        <div class="darkMode">
-          <p>DARK</p>
-          <img src="./assets/icon-moon.svg" alt="">
+        <div class="darkMode" >
+          <p id="modeText">DARK</p>
+          <img src="./assets/icon-moon.svg" id = "dark_btn"alt="">
         </div>        
       </div>
       
-      <div class="search">
+      <div class="search" id="search_container">
         <img src="./assets/icon-search.svg" alt="">
         <input type="text" placeholder="Search Github username...">
         <div class="search_btn">
@@ -32,14 +32,14 @@
         
         <div class="profile">
           <div class="profile_frame">
-            <img src="./assets/profilePlaceholder.png" alt="">
+            <img id = "avatar"src="./assets/profilePlaceholder.png" alt="">
           </div>
         </div>
 
         <div class="user">
           
           <div class="user_info">
-            <div class="name">
+            <div class="name" >
               <h3>Lance Toledo</h3>
             </div>
             <div class="date">
@@ -57,7 +57,7 @@
           </div>
 
 
-          <div class="stats_container">
+          <div class="stats_container" id="statistics">
             <div class="stats">
               <p>Repos</p>
               <p>8</p>
@@ -113,6 +113,6 @@
   
 
 
-
+<script src="script.js"></script>
 </body>
 </html>
