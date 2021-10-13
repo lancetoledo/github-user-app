@@ -22,10 +22,14 @@
       
       <div class="search" id="search_container">
         <img src="./assets/icon-search.svg" alt="">
-        <input type="text" placeholder="Search Github username...">
+        <input id ="input" type="text" placeholder="Search Github username...">
         <div class="search_btn">
-          <button>Search</button>
+          <button id="search">Search</button>
         </div>
+      </div>
+
+      <div id="error">
+        <p>User not found</p>
       </div>
 
       <div class="content">
@@ -39,36 +43,39 @@
         <div class="user">
           
           <div class="user_info">
+
             <div class="name" >
-              <h3>Lance Toledo</h3>
+              <h3 id = "name"></h3>
+              <div class="username">
+                <p id="login"></p>
+              </div>
             </div>
+            
             <div class="date">
-              Joined
+              <p id="date"></p>
             </div>
             
           </div>
           
-          <div class="username">
-            <p>@lancetoledo</p>
-          </div>
+
 
           <div class="bio">
-            <p>This profile has no bio</p>
+            <p id = "bio"></p>
           </div>
 
 
           <div class="stats_container" id="statistics">
             <div class="stats">
               <p>Repos</p>
-              <p>8</p>
+              <p id="repo"></p>
             </div>
             <div class="stats">
               <p>Followers</p>
-              <p>3938</p>
+              <p id="followers"></p>
             </div>
             <div class="stats">
               <p>Following</p>
-              <p>9</p>
+              <p id="following"></p>
             </div>
           </div>
 
@@ -78,22 +85,22 @@
             <div class="left">
               <div class="info">
                 <img src="./assets/icon-location.svg" alt="">
-                <p>San Francisco</p>
+                <p id="location"></p>
               </div>
               <div class="info">
                 <img src="./assets/icon-website.svg" alt="">
-                <a href="">https://github.blog</a>
+                <a href="" id = "blog"></a>
               </div>
             </div>
 
             <div class="right">
               <div class="info">
                 <img src="./assets/icon-twitter.svg" alt="">
-                <p>Not Available</p>
+                <p id ="twitter"></p>
               </div>
               <div class="info">
                 <img src="./assets/icon-company.svg" alt="">
-               <p>@lancetoledo</p>
+               <p id= "company"></p>
               </div>
             </div>
           </div>

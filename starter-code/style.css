@@ -17,8 +17,8 @@ body {
 }
 
 .container {
-    width: 400px;
-    height: 300px;
+    width: 500px;
+    height: 350px;
 }
 
 .main {
@@ -88,6 +88,11 @@ body {
 
 }
 
+#error {
+    color: rgb(175, 0, 0);
+    height: 15px;
+    display: none;
+}
 
 
 .content {
@@ -125,12 +130,14 @@ body {
 .user_info {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
+    
 
 }
 
 .date {
     font-size: x-small;
+    margin-top: 10px;
 }
 
 .username {
@@ -165,9 +172,8 @@ body {
 }
 
 .links_container {
-    width: 90%;
-    height: 20%;
-    /* background-color: darkblue; */
+    width: 100%;
+    height: 30%;
     margin-top: 15px;
     display: flex;
     align-items: center;
@@ -176,10 +182,10 @@ body {
 
 .info {
     display: flex;
-    font-size: x-small;
+    font-size: xx-small;
     align-items: center;
     height: 100%;
-    width: 100px;
+    width: 200px;
 
 }
 
@@ -190,7 +196,34 @@ body {
 }
 
 
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
 
+    .container {
+        width: 90%;
+        /* height: 80%; */
+    }
+
+    .profile {
+        background-color: #0079FF;
+        height: 80px;
+    }
+
+    .user_info {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .name {
+        width: 100%;
+    }
+
+    .date {
+        width: 100%;
+    }
+}
 
 
 
